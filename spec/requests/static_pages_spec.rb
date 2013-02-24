@@ -6,13 +6,13 @@ describe "Static pages" do
     
     before { visit root_path }
     
-    it "should have the h1 'Mi Buen Consultorio'" do
-      page.should have_selector('h1', :text => 'Mi Buen Consultorio')
+    it "should have the h1 'Mejorando tu salud'" do
+      page.should have_selector('h1', :text => 'Mejorando tu salud')
     end
 
     it "should have the title 'Home'" do
       page.should have_selector('title',
-                        :text => "Mi Buen Consultorio | Home")
+                        :text => "Mejorando tu salud | Home")
     end
     
     describe "for signed in users" do
@@ -54,7 +54,7 @@ describe "Static pages" do
 
     it "should have the title 'Help'" do
       page.should have_selector('title',
-                        :text => "Mi Buen Consultorio | Help")
+                        :text => "Mejorando tu salud | Help")
     end
   end
 
@@ -68,7 +68,7 @@ describe "Static pages" do
 
     it "should have the title 'About'" do
       page.should have_selector('title',
-                        :text => "Mi Buen Consultorio | About")
+                        :text => "Mejorando tu salud | About")
     end
   end
 
@@ -82,7 +82,7 @@ describe "Static pages" do
 
     it "should have the title 'Contact'" do
       page.should have_selector('title',
-                        :text => "Mi Buen Consultorio | Contact")
+                        :text => "Mejorando tu salud | Contact")
     end
   end
 
