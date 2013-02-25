@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       sign_in @user
-      flash[:success] = "Bienvenido a El Buen Consultorio!"
+      flash[:success] = "Bienvenido a Mejorando tu salud!"
       redirect_to @user # user_path
     else
       render 'new'
@@ -41,12 +41,12 @@ class UsersController < ApplicationController
   end
   
   def index
-    @search = User.search do
-      fulltext params[:search]
-      paginate :page => params[:page], :per_page => 5
-    end
-    @users = @search.results
-    #@users = User.page(params[:page]).per_page(5)
+    #@search = User.search do
+      #fulltext params[:search]
+      #paginate :page => params[:page], :per_page => 5
+    #end
+    #@users = @search.results
+    @users = User.page(params[:page]).per_page(5)
   end
   
   def destroy
