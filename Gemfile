@@ -7,7 +7,7 @@ gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.5'
 gem 'sunspot_rails', '~> 1.3.3'
 gem 'sunspot_solr', '~> 1.3.3'
-gem 'pg', '0.12.2'
+gem 'pg', '~> 0.14.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

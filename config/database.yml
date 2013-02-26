@@ -17,7 +17,7 @@ development:
 # Do not set this db to the same as development or production.
 test: &test
   adapter: postgresql
-  database: test_mejorandotusalut
+  database: test_mejorandotusalud
   host: localhost
   pool: 5
   timeout: 5000
